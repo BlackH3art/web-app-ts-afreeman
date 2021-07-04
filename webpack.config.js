@@ -11,5 +11,9 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  devServer: {
+    contentBase: "./assets",
+    port: 4500
   }
 };
