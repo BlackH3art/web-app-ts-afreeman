@@ -2,11 +2,11 @@ module.exports = {
   mode: "development",
   entry: "./src/index.ts",
   output: { filename: "bundle.js" }, 
-  resolve: { extensions: [".ts", ".js", ".css"]},
+  resolve: { extensions: [".ts", ".tsx", ".js", ".css"]},
   module: {
     rules: [
       { 
-        test: /\.ts/, 
+        test: /\.tsx?$/, 
         use: "ts-loader",
         exclude: /node_modules/
       },
@@ -21,3 +21,5 @@ module.exports = {
     port: 4500
   }
 };
+
+// add .tsx extension + test: /\.tsx?$/

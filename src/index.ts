@@ -1,5 +1,5 @@
 import { LocalDataSource } from "./data/localDataSource";
-import { DomDisplay } from './domDisplay';
+import { HtmlDisplay } from './htmlDisplay';
 import "bootstrap/dist/css/bootstrap.css";
 
 // utworzenie data source
@@ -8,7 +8,7 @@ let ds = new LocalDataSource();
 async function displatData() {
 
   // utworzenie widoku elementu
-  let display = new DomDisplay();
+  let display = new HtmlDisplay();
 
   // ustalenie jego propsów
   display.props = {
