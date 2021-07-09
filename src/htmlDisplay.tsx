@@ -47,14 +47,7 @@ export class HtmlDisplay {
   };
 
   selectCategory = (selected: string) => {
-
-    console.log('FILTER');
-    
     this.selectedCategory = selected === "Wszystkie" ? undefined : selected;
-
-    console.log('selected Category w HTML display -->', this.selectedCategory);
-    console.log('selected w HTML display -->', selected);
-    
     this.updateContent();
   };
 };
