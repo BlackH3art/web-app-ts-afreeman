@@ -12,8 +12,7 @@ async function displatData() {
 
   // ustalenie jego propsów
   display.props = {
-    products: await ds.getProducts("name"),
-    order: ds.order,
+    dataSource: ds
   };
 
   // wywołoanie wjego zawartości
