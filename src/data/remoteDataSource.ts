@@ -3,13 +3,15 @@ import { Product, Order } from "./entities";
 import axios from 'axios';
 
 
-const protocol = 'http';
-const hostname = 'localhost';
-const port = 4600;
+// const protocol = 'http';
+// const hostname = 'localhost';
+// const port = 4600;
 
 const urls = {
-  products: `${protocol}://${hostname}:${port}/products`,
-  orders: `${protocol}://${hostname}:${port}/orders`
+  // products: `${protocol}://${hostname}:${port}/products`,
+  // orders: `${protocol}://${hostname}:${port}/orders`
+  products: "/api/products",
+  orders: "/api/orders"
 };
 
 export class RemoteDataSource extends AbstractDataSource {
